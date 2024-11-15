@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* cores */
+    --color-black: #0D0D0D;
+    --color-gray: #403F3F;
+    --color-background: #8B939C;
+    --color-yellow: #A68217;
+    --color-hover: #7b6219;
+    --color-white: #fff;
+
+    /* sombras */
+    --shadow-header: 0px 1px 5px rgba(0, 0, 0, 0.2);;
+}
+
+html::-webkit-scrollbar {
+    width: 2px;
+    background: var(--color-background);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color-white);
+}
+
+body {
+    width: 100vw;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+
+    /*-- Display-Flex --*/
+
+.flexbox {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+    /*-- Botões --*/
+
+.btns {
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: 0.20s ease;
+}
+
+.btns:hover {
+        cursor: pointer;
+        background: var(--color-hover);
+        transform: scale(1.03);
+}

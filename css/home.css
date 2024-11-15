@@ -1,0 +1,172 @@
+    /*---- Global-Home ----*/
+
+#home {
+    height: 100svh;
+    background: var(--color-background);
+    position: relative;
+}
+
+h1 {
+    width: 420px;
+    font-size: 3rem;
+    color: var(--color-gray);
+    margin-bottom: 12px;
+}
+
+a {   
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.20s ease;
+}
+
+
+    
+            /*-- Header --*/
+    
+header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-background);
+    padding: 0px 20px;
+    box-shadow: var(--shadow-header);
+    z-index: 10;
+}
+
+.list-navigation {
+    list-style: none;
+    gap: 20px;
+}
+
+.list-item a {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    padding: 10px;
+}
+
+.list-item a:hover {
+    color: var(--color-white);
+}
+
+        /*-- End-Header --*/
+    
+        /*-- Hero --*/
+    
+.hero-container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.hero-content {
+    max-width: 530px;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.paragraph-hero {
+    color: var(--color-white);
+}
+    
+            /*-- image-hero --*/
+    
+.container-img-hero {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translate(0%, -50%);
+}
+
+.picture-hero {
+    z-index: 2;
+    position: absolute;  
+}
+
+.picture-hero img {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
+}
+
+.img-hero-accent {
+    position: relative;
+    width: 512px;
+    height: 452px;
+    left: 20px;
+    top: 20px;
+    background: var(--color-gray);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+}
+
+        /*  fim-hero  */
+
+        /*-- Scroll Indicator --*/
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.scroll-indicator span ion-icon {
+    width: 20px;
+    color: var(--color-gray);
+}
+
+
+
+/*---- Media queries ----*/
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .hero-container {
+        padding-left: 60px;
+    }
+
+    .container-img-hero {
+        right: 5%;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .container-img-hero {
+        right: 0px;
+        position: relative;
+        transform: translate(0%, 0%);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-container {
+        padding-left: 20px;
+    }
+
+    .img-hero-accent {
+        width: 384px;
+        height: 339px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-hero-accent {
+        width: 256px;
+        height: 226px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-hero-accent {
+        width: 192px;
+        height: 170px;
+    }
+}
