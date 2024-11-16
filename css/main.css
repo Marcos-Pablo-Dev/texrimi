@@ -6,7 +6,7 @@ h2 {
     color: var(--color-black);
     width: fit-content;
     font-size: 2rem;
-    border-bottom: 4px solid var(--color-yellow);
+    border-bottom: 4px solid var(--color-yellow); 
 }
 
 h3 {
@@ -30,7 +30,7 @@ p {
 
 .about-container {
     position: relative;
-    width: 100%;
+    width: 100svw;
     align-items: baseline;
     gap: 20px;
     padding-left: 10%;
@@ -44,17 +44,15 @@ p {
 }
 
 .picture-about {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 3;
 }
 
 .picture-about img {
+    border-radius: 5px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
 }
 
-.img-about-accent-yellow {
+/*.img-about-accent-yellow {
     position: absolute;
     width: 360px;
     height: 360px;
@@ -64,9 +62,9 @@ p {
     transform: translateY(-50%);
     z-index: 2;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
-}
+}*/
 
-.img-about-accent-gray {
+/*.img-about-accent-gray {
     position: relative;
     width: 400px;
     height: 400px;
@@ -74,7 +72,7 @@ p {
     background: var(--color-gray);
     z-index: 1;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-}
+}*/
 
             /*-- About-text --*/
 
@@ -356,17 +354,15 @@ select.field option {
     /*---- Medias ----*/
 
 @media (max-width: 1250px) {
+
         /*-- About --*/
 
     .about-container {
-        align-items: center;
-        gap: 28px;
-        padding-left: 20px;
+        padding: 52px
     }
 
     .container-img-about {
-        position: relative;
-        right: 0;
+        right: 52px;
     }
 
         /*-- Services --*/
@@ -392,8 +388,19 @@ select.field option {
 
 @media (max-width: 1024px) {
 
+        /*-- About --*/
 
-    .img-about-accent-yellow {
+    .about-container {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container-img-about {
+        position: relative;
+        right: 0;
+    }
+
+    /*.img-about-accent-yellow {
         width: 270px;
         height: 270px;
         right: -21px;
@@ -403,7 +410,7 @@ select.field option {
         width: 300px;
         height: 300px;
         left: -39px;
-    }
+    }*/
 
         /*-- Services --*/
 
