@@ -18,6 +18,11 @@
     --shadow-header: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+html {
+
+    scroll-behavior: smooth;
+}
+
 html::-webkit-scrollbar {
     width: 2px;
     background: var(--color-background);
