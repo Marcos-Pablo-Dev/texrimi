@@ -159,7 +159,6 @@ strong.texrimi {
 
 .container-portfolio-items {
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -174,6 +173,8 @@ strong.texrimi {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     transition: width 0.3s ease-in-out;
 }
+
+
 
 .active {
     width: 300px;
@@ -323,6 +324,7 @@ select.field option {
 
 .container-street {
     width: 300px;
+    min-width: 300px;
     background: var(--color-black);
     justify-content: center;
     gap: 48px;
@@ -346,8 +348,209 @@ select.field option {
             
             /*-- End-Contact --*/
 
-
-
     /*-- End-Main --*/
+
+
+
+
+    /*---- Medias ----*/
+
+@media (max-width: 1250px) {
+        /*-- About --*/
+
+    .about-container {
+        align-items: center;
+        gap: 28px;
+        padding-left: 20px;
+    }
+
+    .container-img-about {
+        position: relative;
+        right: 0;
+    }
+
+        /*-- Services --*/
+
+    .services-cards {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+        /*-- Portfolio --*/
+
+    .portfolio-items {
+        width: 100px;
+        height: 400;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .active {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .img-about-accent-yellow {
+        width: 270px;
+        height: 270px;
+        right: -21px;
+    }
+    
+    .img-about-accent-gray {
+        width: 300px;
+        height: 300px;
+        left: -39px;
+    }
+
+        /*-- Services --*/
+
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    /*-- Portfolio --*/
+
+    .container-portfolio-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .portfolio-items {
+        width: 150px;
+    }
+    
+    .active {
+        width: 300px;
+    }
+
+    /*-- Contact --*/
+
+    .container-map {
+        width: 90svw;
+    }
+
+    .container-iframe, .container-iframe iframe {
+        width: auto;
+        flex: 1;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /*-- About --*/
+
+    .img-about-accent-yellow {
+        width: 180px;
+        height: 180px;
+        right: -14px;
+    }
+    
+    .img-about-accent-gray {
+        width: 200px;
+        height: 200px;
+        left: -26px;
+    }
+
+    /*-- Portfolio --*/
+
+    .container-portfolio-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .portfolio-items {
+        width: 100px;
+    }
+
+    .portfolio-items, .portfolio-items picture {
+        height: 300px;
+    }
+    
+    .active {
+        width: 225px;
+    }
+
+    /*-- Contact --*/
+
+        /*-- map --*/
+
+    .container-main .container-map {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container-map, .container-iframe iframe {
+        width: 90svw;
+    }
+
+    .container-street {
+        width: 100%;
+        min-width: 0px;
+        gap: 40px;
+        padding: 52px 20px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+        /*-- About --*/
+
+    .img-about-accent-yellow {
+        width: 135px;
+        height: 135px;
+        right: -10px;
+    }
+    
+    .img-about-accent-gray {
+        width: 150px;
+        height: 150px;
+        left: -19px;
+    }  
+
+
+        /*-- Contact --*/
+
+    /*.contact-container {
+        padding-bottom: 0px;
+    }*/
+
+    .contact-header {
+        width: 100%;
+    }
+
+    .container-address {
+       width: 100svw;
+    }
+
+    .container-main .container-address .social-media {
+        width: 90svw;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+        border-radius: 10px;
+    }
+
+    .link-contact {
+        display: block;
+        width: 50%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+
+
+
+}
 
 

@@ -18,6 +18,7 @@
 
 
 </head>
+
 <body>
 
     <section id="home">
@@ -28,22 +29,28 @@
                 </a>
             </div>
 
-            <nav class="navigation">
+
+            <nav class="navigation">                
                 <ul class="list-navigation flexbox">
                     <li class="list-item list-item-1">
-                        <a href="#about">sobre</a>
+                        <a href="#about" class="link-nav">sobre</a>
                     </li>
                     <li class="list-item list-item-2">
-                        <a href="#services">serviços</a>
+                        <a href="#services" class="link-nav">serviços</a>
                     </li>
                     <li class="list-item list-item-3">
-                        <a href="#portfolio">portifólio</a>
+                        <a href="#portfolio" class="link-nav">portifólio</a>
                     </li>                    
                     <li class="list-item list-item-4">
-                        <a href="#contact">contato</a>
+                        <a href="#contact" class="link-nav">contato</a>
                     </li>
                 </ul>
             </nav>
+
+            <div class="container-menu">
+                <ion-icon name="menu-outline" class="menu-burguer active"></ion-icon>
+                <ion-icon name="close-outline" class="close-menu"></ion-icon>
+            </div>
         </header>
 
         <section class="hero-container flexbox">
@@ -88,7 +95,13 @@
 
             <div class="container-img-about">
                 <picture class="picture-about">
-                    <img src="./imagens/sobre/img-portifolio-sobre.jpg" alt="Sala moderna e elegante com paredes claras, piso de madeira e um sofá amarelo em destaque.">
+                    <source media="(max-width: 480px)" srcset="./imagens/sobre/imgsobre-150.jpg" type="image/jpeg">
+
+                    <source media="(max-width: 768px)" srcset="./imagens/sobre/imgsobre-200.jpg" type="image/jpeg">
+
+                    <source media="(max-width: 1024px)" srcset="./imagens/sobre/imgsobre-300.jpg" type="image/jpeg">
+
+                    <img src="./imagens/sobre/imgsobre.jpg" alt="Sala moderna e elegante com paredes claras, piso de madeira e um sofá amarelo em destaque.">
                 </picture>
                 <div class="img-about-accent-yellow"></div>
                 <div class="img-about-accent-gray"></div>
@@ -162,16 +175,26 @@
                 <div class="portfolio-box-items box-items-1 flexbox">
                     <div class="portfolio-items">
                         <picture>
+                            <!--<source media="(max-width: 480px)" srcset="./imagens/sobre/imgsobre-150.jpg" type="image/jpeg" type="image/jpeg">
+
+                            <source media="(max-width: 768px)" srcset="./imagens/sobre/imgsobre-200.jpg" type="image/jpeg" type="image/jpeg">-->
+        
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport01-225.jpg" type="image/jpeg">
+
                             <img src="./imagens/portfolio/portfolio-300/imgportfolio-01.jpg" alt="">
                         </picture>
                     </div>
                     <div class="portfolio-items">
                         <picture>
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport02-225.jpg" type="image/jpeg">
+
                             <img src="./imagens/portfolio/portfolio-300/imgportfolio-02.jpg" alt="">
                         </picture>
                     </div>
                     <div class="portfolio-items">
                         <picture>
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport03-225.jpg" type="image/jpeg">
+
                             <img src="./imagens/portfolio/portfolio-300/imgportfolio-03.jpg" alt="">
                         </picture>
                     </div>
@@ -179,15 +202,25 @@
 
                 <div class="portfolio-box-items box-items-2 flexbox">
                     <div class="portfolio-items">
-                        <picture><img src="./imagens/portfolio/portfolio-300/imgportfolio-04.jpg" alt=""></picture>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport04-225.jpg" type="image/jpeg">
+                            
+                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-04.jpg" alt="">
+                        </picture>
                     </div>
+
                     <div class="portfolio-items">
                         <picture>
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport05-225.jpg" type="image/jpeg">
+
                             <img src="./imagens/portfolio/portfolio-300/imgportfolio-05.jpg" alt="">
                         </picture>
                     </div>
+
                     <div class="portfolio-items">
                         <picture>
+                            <source media="(max-width: 768px)" srcset="./imagens/portfolio/portfolio-225/imgport06-225.jpg" type="image/jpeg">
+
                             <img src="./imagens/portfolio/portfolio-300/imgportfolio-06.jpg" alt="">
                         </picture>
                     </div>
@@ -268,7 +301,7 @@
                 </section>
 
                 <section class="container-map flexbox">
-                    <div class="container-iframe">
+                    <div class="container-iframe flexbox">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8234434282563!2d-47.76893142369485!3d-21.15942347776969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf7fabd1c805%3A0x15548e4f0482644f!2sR.%20Em%C3%ADlio%20Gritti%2C%20345%20-%20Jardim%20Joquei%20Clube%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014078-650!5e0!3m2!1spt-BR!2sbr!4v1731687897261!5m2!1spt-BR!2sbr" width="620" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
@@ -277,10 +310,8 @@
                         <a href="https://maps.app.goo.gl/9RmuVz8QhGp8WMuAA" class="street-link">Rua Emílio Gritti, 345 - Ribeirão Preto</a>
                     </section>
                 </section>
-            </address>
-            
+            </address>            
         </section>
-
     </main>
 
     <footer class="flexbox">
@@ -293,7 +324,7 @@
         <p class="paragraph-footer">Todos os direitos reservados | 2024</p>
     </footer>
 
-
+    <script src="js/menu.js"></script>
     <script src="js/portfolio.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

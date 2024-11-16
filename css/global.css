@@ -12,9 +12,10 @@
     --color-yellow: #A68217;
     --color-hover: #7b6219;
     --color-white: #fff;
+    --color-gray-opacity: rgb(64, 63, 63, 0.2);
 
     /* sombras */
-    --shadow-header: 0px 1px 5px rgba(0, 0, 0, 0.2);;
+    --shadow-header: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 html::-webkit-scrollbar {
@@ -27,7 +28,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    width: 100vw;
+    width: 100svw;
     font-family: sans-serif;
     overflow-x: hidden;
     font-size: 1rem;
@@ -46,6 +47,7 @@ body {
     /*-- Botões --*/
 
 .btns {
+
     display: block;
     width: fit-content;
     font-size: 1rem;
