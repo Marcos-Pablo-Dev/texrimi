@@ -32,10 +32,7 @@ linkNav.forEach( link => {
         menuOpen.classList.add('active');
        }
 
-       link.classList.add('link-active');
-
        setTimeout(() => {
-        if ('')
         link.classList.remove('link-active');
        }, 200)
 
