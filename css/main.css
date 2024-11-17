@@ -52,27 +52,7 @@ p {
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
 }
 
-/*.img-about-accent-yellow {
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    background: var(--color-yellow);
-    top: 50%;
-    right: -28px;
-    transform: translateY(-50%);
-    z-index: 2;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
-}*/
 
-/*.img-about-accent-gray {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    left: -52px;
-    background: var(--color-gray);
-    z-index: 1;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-}*/
 
             /*-- About-text --*/
 
@@ -172,89 +152,9 @@ strong.texrimi {
     transition: width 0.3s ease-in-out;
 }
 
-
-
 .active {
     width: 300px;
 }
-
-
-
-        /*-- Budget --*/
-
-.budget-container {
-    display: none;
-    background: var(--color-background);
-    color: var(--color-white);
-    gap: 48px;
-}
-
-.budget-container h2 {
-    color: var(--color-gray);
-    border: none;
-}
-
-
-            /*-- budget-fieldset --*/
-
-fieldset {
-    border: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-}
-
-fieldset div {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-
-}
-
-fieldset div label {
-    font-weight: bold;
-}
-
-.field {
-    height: 40px;
-    padding: 0px 10px;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: var(--color-white);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
-}
-
-select.field option {
-    background-color: var(--color-background);
-}
-
-
-.field::-webkit-inner-spin-button   {
-    display: none;
-}
-
-.field::placeholder {
-    color: var(--color-gray);
-    opacity: 0.4;
-}
-
-#field-area {
-    width: 80px;
-    text-align: center;
-}
-
-.paragraph-select-area {
-    max-width: 500px;
-    font-size: 0.9rem;
-    text-align: center;
-    color: var(--color-white);
-}
-
-
-            /*-- end-budget-fieldset --*/
 
             /*-- Contact --*/
 
@@ -481,7 +381,7 @@ select.field option {
         height: 300px;
     }
     
-    .active {
+    .portfolio-items.active {
         width: 225px;
     }
 
@@ -524,6 +424,25 @@ select.field option {
         left: -19px;
     }  
 
+        /*-- Portfolio --*/
+
+    .container-portfolio-items {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .portfolio-items, .portfolio-items picture {
+        height: 200px;
+    }
+
+    .portfolio-box-items {
+        flex-direction: column;
+    }
+    
+    .portfolio-items, .portfolio-items.active {
+        width: 150px;
+    }
+
 
         /*-- Contact --*/
 
@@ -560,4 +479,10 @@ select.field option {
 
 }
 
+@media (max-width: 320px){
+    .container-portfolio-items {
+        flex-direction: column;
+        justify-content: center;
+    }
+} 
 

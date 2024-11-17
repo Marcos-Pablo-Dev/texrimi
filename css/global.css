@@ -71,3 +71,9 @@ body {
         background: var(--color-hover);
         transform: scale(1.03);
 }
+
+@media (max-width: 480px) {
+    .text-hidden    {
+        display: none
+    }
+}

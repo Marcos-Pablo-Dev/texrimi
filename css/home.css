@@ -293,9 +293,7 @@ header {
     }
 
     /*-- hero --*/
-    .text-hidden {
-        display: none;
-    }
+
 
     .img-hero-accent {
         width: 192px;
