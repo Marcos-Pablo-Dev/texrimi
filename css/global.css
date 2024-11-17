@@ -52,11 +52,11 @@ body {
     /*-- Botões --*/
 
 .btns {
-
     display: block;
     width: fit-content;
     font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--color-white);
     background-color: var(--color-yellow);
     padding: 12px;

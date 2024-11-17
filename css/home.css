@@ -250,7 +250,7 @@ header {
         background: var(--color-background);
         box-shadow: var(--shadow-header);
         border-top: 1px solid var(--color-gray-opacity);
-        transition: max-height 1s;
+        transition: max-height 0.5s;
     }
 
     .navigation.active {
