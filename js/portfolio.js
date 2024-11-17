@@ -14,6 +14,6 @@ portfolioItem.forEach( item => {
         if (currentActive && currentActive !== item){
             currentActive.classList.remove('active');
         }
-        item.classList.toggle('active')
+        item.classList.add('active')
     });
 });

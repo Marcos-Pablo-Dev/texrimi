@@ -196,7 +196,6 @@ header {
     }
 }
 
-
 @media (max-width: 1024px) {
 
     
@@ -210,7 +209,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)  {
     /*-- Global */
     h1 {
         width: 100%;
@@ -269,7 +268,7 @@ header {
     }
 
     .list-item a.link-active {
-        border-radius: none;
+        border-radius: 0px;
     }
 
     /*-- hero --*/
@@ -294,14 +293,13 @@ header {
 
     /*-- hero --*/
 
-
     .img-hero-accent {
         width: 192px;
         height: 170px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px), (max-height: 320px) {
     /*-- Global */
 
     h1 {
@@ -311,5 +309,68 @@ header {
     /*-- hero --*/
     .container-img-hero {
         display: none;
+    }
+}
+            /*-- Celulares e tablets em modo paisagem --*/
+
+@media (max-width: 1366px) and (max-height: 480px) and (orientation: landscape) {
+    /*-- Global */
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /*-- hero --*/
+
+    .hero-content {
+        max-width: 40svw;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .paragraph-hero {
+        font-size: 0.9rem;
+    }
+
+    .container-img-hero {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1250px) and (min-height: 481px) and (orientation: landscape){
+    /* Estilos para tablets em paisagem */
+
+
+    .hero-container {
+        padding-left: 5svw;
+    }
+
+    .hero-content {
+        max-width: 50svw;
+        flex-direction: column;
+        /*gap: 28px;*/
+    }
+
+
+
+    .container-img-hero {
+        position: absolute;
+        right: 5svw;
+        transform: translate(0px, -50%);
+    }
+
+    .img-hero-accent {
+        width: 384px;
+        height: 339px;
+    }
+}
+
+@media (max-width: 960px) and (max-height: 620px) and (orientation: landscape){
+
+    .img-hero-accent {
+        width: 256px;
+        height: 226px;
     }
 }

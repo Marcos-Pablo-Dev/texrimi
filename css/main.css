@@ -404,7 +404,7 @@ strong.texrimi {
     .portfolio-box-items {
         flex-direction: column;
     }
-    
+
     .portfolio-items, .portfolio-items.active {
         width: 150px;
     }
