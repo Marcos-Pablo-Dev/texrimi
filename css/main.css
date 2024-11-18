@@ -311,7 +311,7 @@ strong.texrimi {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 480px) and (orientation: landscape) {
 
     /*-- Portfolio --*/
 
@@ -354,6 +354,24 @@ strong.texrimi {
     }
 
 
+}
+
+@media (max-height: 320px) and (orientation: landscape) {
+        /*-- Portfolio --*/
+
+        .container-portfolio-items {
+            flex-direction: column;
+            align-items: center;
+            justify-content: baseline;
+        }
+    
+        .portfolio-items, .portfolio-items picture {
+            height: 200px;
+        }
+
+        .portfolio-items, .portfolio-items.active {
+            width: 150px;
+        }
 }
 
 @media (max-width: 480px) {
@@ -492,7 +510,7 @@ strong.texrimi {
             /*-- map --*/
 
     .container-map {
-        width: 100svw;
+        width: 0svw;
     }
 
     .container-iframe {
