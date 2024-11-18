@@ -67,6 +67,7 @@ a {
 }   
 
 h1{
+    max-width: 500px;
     font-size: 3rem;
     color: var(--color-gray);
 }
@@ -76,6 +77,7 @@ h2 {
     width: fit-content;
     font-size: 2rem;
     border-bottom: 4px solid var(--color-yellow); 
+    text-align: center;
 }
 
 h3 {
@@ -87,12 +89,26 @@ p {
     color: var(--color-gray);
 }
 
-
- 
-
     /*-- Media Queries  --*/
 
-@media (max-width: 768px){
+@media (max-width: 1366px) and (max-height: 480px) and (orientation: landscape) {
+    /*-- Global */
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 768px), (max-height: 620px){
     h1 {
         font-size: 2.5rem;
     }
@@ -128,25 +144,38 @@ p {
     }
 }
 
-@media (max-width: 320px), (max-height: 320px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
-
-@media (max-width: 1366px) and (max-height: 480px) and (orientation: landscape) {
-    /*-- Global */
-
+@media (max-width: 320px) {
     a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
     }
 }

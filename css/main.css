@@ -150,7 +150,6 @@ strong.texrimi {
     width: fit-content;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     flex-direction: row;
-    justify-content: space-between;
     padding: 10px 0px;
     border-radius: 10px;
 }
@@ -415,15 +414,93 @@ strong.texrimi {
         text-align: center;
     }
 
+}
 
+@media (max-width: 360px) {
+    /*-- Services --*/
+    .card picture {
+    display: none;
+    }
 
+    .card {
+    width: 90svw;
+    height: fit-content;
+    }
+
+    /*-- Portfolio --*/
+
+    .container-portfolio-items {
+        gap: 10px;
+    }
 
 }
 
 @media (max-width: 320px){
+    /*-- Portfolio --*/
+
     .container-portfolio-items {
         flex-direction: column;
         justify-content: center;
     }
+
+    /*-- Contact --*/
+
+    .container-main .container-address .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-contact {
+        width: 100%;
+    }
+
+    .social-media .content-separation.flex-column {
+        width: 100%;
+        flex-direction: row;
+        padding: 0px 10px;
+    }
+
+    .social-media .content-separation.flex-column hr{
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
 } 
 
+@media (max-width: 280px){
+    /*-- About --*/
+    .container-img-about {
+        display: none;
+    }
+
+    /*-- Portfolio --*/
+    .container-portfolio-items {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*-- Contact --*/
+
+    .contact-container {
+        padding-bottom: 0px;
+    }
+
+    .paragraph-contact {
+        display: none;
+    }
+
+            /*-- map --*/
+
+    .container-map {
+        width: 100svw;
+    }
+
+    .container-iframe {
+        display: none;
+    }
+
+    .container-street {
+        align-items: center;
+        text-align: center;
+    }
+} 

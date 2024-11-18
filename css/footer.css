@@ -1,6 +1,7 @@
 footer {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background: var(--color-black);
     gap: 20px;
     padding: 20px 0;
