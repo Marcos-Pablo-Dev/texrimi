@@ -510,7 +510,7 @@ strong.texrimi {
             /*-- map --*/
 
     .container-map {
-        width: 0svw;
+        width: 100svw;
     }
 
     .container-iframe {
