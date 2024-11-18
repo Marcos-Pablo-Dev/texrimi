@@ -126,7 +126,7 @@ strong.texrimi {
     transition: width 0.3s ease-in-out;
 }
 
-.active {
+.port-active {
     width: 300px;
 }
 
@@ -253,7 +253,7 @@ strong.texrimi {
         transition: width 0.3s ease-in-out;
     }
     
-    .active {
+    .port-active {
         width: 300px;
     }
 }
@@ -294,7 +294,7 @@ strong.texrimi {
         width: 150px;
     }
     
-    .active {
+    .port-active {
         width: 300px;
     }
 
@@ -329,7 +329,7 @@ strong.texrimi {
         height: 300px;
     }
     
-    .portfolio-items.active {
+    .port-active {
         width: 225px;
     }
 
@@ -369,7 +369,7 @@ strong.texrimi {
             height: 200px;
         }
 
-        .portfolio-items, .portfolio-items.active {
+        .portfolio-items, .portfolio-items.port-active {
             width: 150px;
         }
 }
@@ -397,7 +397,7 @@ strong.texrimi {
         flex-direction: column;
     }
 
-    .portfolio-items, .portfolio-items.active {
+    .portfolio-items, .portfolio-items.port-active {
         width: 150px;
     }
 
