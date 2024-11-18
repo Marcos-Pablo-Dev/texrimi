@@ -92,6 +92,8 @@ strong.texrimi {
         /*-- Portfólio --*/
 
 .portfolio-container {
+    width: 100svw;
+    align-items: center;
     background: var(--color-gray);
     gap: 48px;
 }
@@ -225,6 +227,32 @@ strong.texrimi {
 
 
     /*---- Medias ----*/
+
+@media (min-width: 1920px) {
+   .container-main.flex-column {
+        width: 100svw;
+        align-items: center;
+    }
+
+    .about-container {
+        max-width: 1920px;
+        padding-left: 250px;
+    }
+
+    .container-img-about {
+        right: 250px;
+    }
+
+    /*-- Portfolio --*/
+
+    .portfolio-header {
+        max-width: 1920px;
+    }
+
+    .container-portfolio-items {
+        max-width: 1920px;
+    }
+}
 
 @media (max-width: 1250px) {
 
