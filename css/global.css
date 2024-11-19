@@ -64,7 +64,7 @@ a {
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.20s ease;
-}   
+}
 
 h1{
     max-width: 500px;
@@ -87,6 +87,7 @@ h3 {
 
 p {
     color: var(--color-gray);
+    letter-spacing: 1px;
 }
 
     /*-- Media Queries  --*/
