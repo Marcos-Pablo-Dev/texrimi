@@ -176,7 +176,7 @@ strong.texrimi {
     margin-top: 16px;
 }
 
-.link-contact:hover p {
+.link-contact.link-contact-active p {
     color: var(--color-background);
 }
 
@@ -223,7 +223,7 @@ strong.texrimi {
     font-style: italic;
 }
 
-.street-link:hover {
+.street-link.link-contact-active {
     color: var(--color-yellow);
 }
             

@@ -51,8 +51,12 @@
             </nav>
 
             <div class="container-menu">
-                <ion-icon name="menu-outline" class="open-menu active" aria-label="abrir menu"></ion-icon>
-                <ion-icon name="close-outline" class="close-menu" aria-label="fechar menu"></ion-icon>
+                <button class="open-menu active" aria-label="abrir menu" aria-expanded="false" aria-controls="menu">
+                    <ion-icon name="menu-outline" class="flexbox"></ion-icon>
+                </button>
+                <button class="close-menu" aria-label="fechar menu" aria-expanded="true" aria-controls="menu">
+                    <ion-icon name="close-outline" class="flexbox"></ion-icon>
+                </button>
             </div>
         </header>
 
@@ -256,7 +260,7 @@
 
             <address class="container-address  flexbox flex-column">
                 <section class="social-media flexbox">
-                    <a href="https://wa.link/8ka2x8" class="link-contact" aria-label="entre em contato com a gente pelo Uatzapp">
+                    <a href="https://wa.link/8ka2x8" class="link-contact links" aria-label="entre em contato com a gente pelo Uatzapp">
                         <div class="area-whats">
                             <img width="60px" src="./imagens/icones/whatsapp_icon.svg" alt="Ícone do WhatsApp" loading="lazy">
 
@@ -272,7 +276,7 @@
                         <hr aria-hidden="true">
                     </div>
                     
-                    <a href="https://www.instagram.com/texrimi/" class="link-contact" aria-label="entre em contato com a gente no Instagram">
+                    <a href="https://www.instagram.com/texrimi/" class="link-contact links" aria-label="entre em contato com a gente no Instagram">
                         <div class="area-insta">
                             <img width="60px" src="./imagens/icones/instagram_icon.svg" alt="Ícone do Instagram" loading="lazy">
 
@@ -289,7 +293,7 @@
 
                     <section class="container-street flexbox flex-column">
                         <h3>Nosso endereço</h3>
-                        <a href="https://maps.app.goo.gl/9RmuVz8QhGp8WMuAA" class="street-link">Rua Emílio Gritti, 345 - Ribeirão Preto, São Paulo</a>
+                        <a href="https://maps.app.goo.gl/9RmuVz8QhGp8WMuAA" class="street-link links">Rua Emílio Gritti, 345 - Ribeirão Preto, São Paulo</a>
                     </section>
                 </section>
             </address>            
@@ -306,8 +310,7 @@
         <p class="paragraph-footer">Todos os direitos reservados | 2024</p>
     </footer>
 
-    <script src="js/header.js"></script>
-    <script src="js/homebutton.js"></script>
+    <script src="js/links.js"></script>
     <script src="js/portfolio.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
