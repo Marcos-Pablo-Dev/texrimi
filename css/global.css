@@ -1,182 +1,200 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*---- global settings  ----*/
     /*---- Body Setings, Flexbox, typography(h1, h2..., p, a, etc. ----*/
 
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-:root {
-    /* cores */
-    --color-black: #0D0D0D;
-    --color-gray: #403F3F;
-    --color-background: #8B939C;
-    --color-yellow: #A68217;
-    --color-hover: #7b6219;
-    --color-white: #fff;
-    --color-gray-opacity: rgb(64, 63, 63, 0.4);
-
-    /* sombras */
-    --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    --shadow-2: 2px 2px 6px rgba(0, 0, 0, 0.25);
-}
-
-html {
-
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    width: 2px;
-    background: var(--color-background);
-}
-
-html::-webkit-scrollbar-thumb {
-    background: var(--color-white);
-}
-
-body {
-    width: 100svw; 
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    background: var(--color-white);
-}
-
-    /*-- Display-Flex --*/
-
-.flexbox {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-    /*-- Text and  Link --*/
-
-a {   
-    -webkit-tap-highlight-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.20s ease;
-}
-
-h1{
-    font-weight: 700;
-    max-width: 500px;
-    font-size: 3rem;
-    color: var(--color-gray);
-}
-
-h2 {
-    color: var(--color-black);
-    width: fit-content;
-    font-size: 2rem;
-    border-bottom: 4px solid var(--color-yellow); 
-    text-align: center;
-}
-
-h3 {
-    color: var(--color-gray);
-    font-size: 1.5rem;
-}
-
-p {
-    color: var(--color-gray);
-    letter-spacing: 1px;
-}
-
-    /*-- Media Queries  --*/
-
-@media (max-width: 1366px) and (max-height: 480px) and (orientation: landscape) {
-    /*-- Global */
-
-    a {
-        font-size: 0.9rem;
+    * {
+        padding: 0px;
+        margin: 0px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
-
-    h1 {
-        font-size: 1.5rem;
+    
+    :root {
+        /* cores */
+        --color-black: #0D0D0D;
+        --color-gray: #403F3F;
+        --color-background: #8B939C;
+        --color-yellow: #A68217;
+        --color-hover: #7b6219;
+        --color-white: #fff;
+        --color-gray-opacity: rgb(64, 63, 63, 0.4);
+    
+        /* sombras */
+        --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.3);
+        --shadow-2: 2px 2px 6px rgba(0, 0, 0, 0.25);
     }
-
-    p {
-        font-size: 0.9rem;
+    
+    html {
+    
+        scroll-behavior: smooth;
     }
-}
-
-
-@media (max-width: 768px), (max-height: 620px){
-    h1 {
-        font-size: 2.5rem;
+    
+    html::-webkit-scrollbar {
+        width: 2px;
+        background: var(--color-background);
     }
-
-    h2 {
-        font-size: 1.8rem;
+    
+    html::-webkit-scrollbar-thumb {
+        background: var(--color-white);
     }
-}
-
-@media (max-width: 480px) {
-    a {
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .text-hidden    {
-        display: none
-    }
-}
-
-@media (max-width: 320px) {
-    a {
-        font-size: 0.8rem;
-    }
-
-    h1 {
-        font-size: 1.7rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 280px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    h3 {
+    
+    body {
+        width: 100svw; 
+        overflow-x: hidden;
+        font-family: "Poppins", sans-serif;
         font-size: 1rem;
+        background: var(--color-white);
     }
-}
+    
+        /*-- Display-Flex --*/
+    
+    .flexbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -js-display: flex;
+        display: flex;
+    }
+    
+    .flex-column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+        /*-- Text and  Link --*/
+    
+    a {   
+        -webkit-tap-highlight-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        -webkit-transition: 0.20s ease;
+        -o-transition: 0.20s ease;
+        transition: 0.20s ease;
+    }
+    
+    h1{
+        font-weight: 700;
+        max-width: 500px;
+        font-size: 3rem;
+        color: var(--color-gray);
+    }
+    
+    h2 {
+        color: var(--color-black);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: 2rem;
+        border-bottom: 4px solid var(--color-yellow); 
+        text-align: center;
+    }
+    
+    h3 {
+        color: var(--color-gray);
+        font-size: 1.5rem;
+    }
+    
+    p {
+        color: var(--color-gray);
+        letter-spacing: 1px;
+    }
+    
+        /*-- Media Queries  --*/
+    
+    @media (max-width: 1366px) and (max-height: 480px) and (orientation: landscape) {
+        /*-- Global */
+    
+        a {
+            font-size: 0.9rem;
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    
+    
+    @media (max-width: 768px), (max-height: 620px){
+        h1 {
+            font-size: 2.5rem;
+        }
+    
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        a {
+            font-size: 0.9rem;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        h2 {
+            font-size: 1.6rem;
+        }
+    
+        h3 {
+            font-size: 1.3rem;
+        }
+    
+        p {
+            font-size: 0.9rem;
+        }
+    
+        .text-hidden    {
+            display: none
+        }
+    }
+    
+    @media (max-width: 320px) {
+        a {
+            font-size: 0.8rem;
+        }
+    
+        h1 {
+            font-size: 1.7rem;
+        }
+    
+        h2 {
+            font-size: 1.4rem;
+        }
+    
+        h3 {
+            font-size: 1.1rem;
+        }
+    
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media (max-width: 280px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        h2 {
+            font-size: 1.2rem;
+        }
+    
+        h3 {
+            font-size: 1rem;
+        }
+    }

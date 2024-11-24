@@ -19,6 +19,7 @@ window.addEventListener('load', openMenuVisible());
 window.addEventListener('resize', openMenuVisible());
 
 menuOpen.addEventListener('click', () => {
+    console.log(menuClose)
     menuNavigation.classList.add('active');
     menuOpen.classList.remove('active');
     menuClose.classList.add('active');

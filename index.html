@@ -10,17 +10,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
 
     <!-- Styles -->
+
     <link rel="stylesheet" href="./css/normalize.min.css">
-    <link rel="stylesheet" href="./css/globalp.css">
-    <link rel="stylesheet" href="./css/home.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./testecss/testehome.css">
+    <link rel="stylesheet" href="./testecss/testeglobal.css">
+    <link rel="stylesheet" href="./testecss/testemain.css">
+    <!--<link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">-->
 
     <!-- Favicon -->
+
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <!-- Compatibility Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/flexibility.js"></script>
 </head>
 
 <body>
@@ -56,10 +67,14 @@
 
             <div class="container-menu">
                 <button class="open-menu active" aria-label="abrir menu" aria-expanded="false" aria-controls="menu">
-                    <ion-icon name="menu-outline" class="flexbox"></ion-icon>
+                    <svg class="open-menu-svg" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                    <!--<ion-icon name="menu-outline" class="flexbox"></ion-icon>
+                    <span>Menu</span>-->
                 </button>
                 <button class="close-menu" aria-label="fechar menu" aria-expanded="true" aria-controls="menu">
-                    <ion-icon name="close-outline" class="flexbox"></ion-icon>
+                    <svg class="close-menu-svg" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+                    <!--<span>Fechar</span>
+                    <ion-icon name="close-outline" class="flexbox"></ion-icon>-->
                 </button>
             </div>
         </header>
@@ -68,25 +83,44 @@
 
             <div class="hero-content flexbox">
                 <div class="hero-content-text">
-                    <h1>Dê Vida nova aos seus ambientes</h1>
+                    <h1>Dê Vida nova aos <br>seus ambientes</h1>
+
                     <p class="paragraph-hero">Transformamos ambientes com <span class="text-hidden">serviços de</span> pintura, molduras e forros, garantindo qualidade e sofisticação<span class="text-hidden"> em cada projeto</span>.</p>
                 </div>
 
                 <div class="container-img-hero" aria-hidden="true">
                     <picture class="picture-hero">
-                        <source media="(max-width: 480px)" srcset="./imagens/home/home-192.jpg" type="image/jpeg">
+                        <!-- WEBP -->
 
-                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="./imagens/home/home-256.jpg" type="image/jpeg">
+                        <source media="(max-width: 480px)" srcset="./imagens/home/home-webp/home-192.webp" type="image/webp">
 
-                        <source media="(min-width: 769px) and (max-height: 620px)" srcset="./imagens/home/home-256.jpg" type="image/jpeg">
+                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="./imagens/home/home-webp/home-256.webp" type="image/webp">
 
-                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 481px)  and (max-height: 880px)" srcset="./imagens/home/home-256.jpg" type="image/jpeg">
+                        <source media="(min-width: 769px) and (max-height: 620px)" srcset="./imagens/home/home-webp/home-256.webp" type="image/webp">
 
-                        <source media="(min-width: 769px) and (max-width: 1250px) and (min-height: 481px) and (max-height: 1024px)" srcset="./imagens/home/home-384.jpg" type="image/jpeg">
+                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 481px)  and (max-height: 880px)" srcset="./imagens/home/home-webp/home-256.webp" type="image/webp">
 
-                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 1025px)" srcset="./imagens/home/home-256.jpg" type="image/jpeg">
+                        <source media="(min-width: 769px) and (max-width: 1250px) and (min-height: 481px) and (max-height: 1024px)" srcset="./imagens/home/home-webp/home-384.webp" type="image/webp">
 
-                        <img src="./imagens/home/home-512.jpg" alt="Sala moderna e elegante com paredes claras, piso de madeira e um sofá amarelo em destaque.">
+                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 1025px)" srcset="./imagens/home/home-webp/home-256.webp" type="image/webp">
+
+                        <source srcset="./imagens/home/home-webp/home-512.webp" type="image/webp">
+
+                        <!-- JPG -->
+
+                        <source media="(max-width: 480px)" srcset="./imagens/home/home-jpg/home-192.jpg" type="image/jpeg">
+
+                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="./imagens/home/home-jpg/home-256.jpg" type="image/jpeg">
+
+                        <source media="(min-width: 769px) and (max-height: 620px)" srcset="./imagens/home/home-jpg/home-256.jpg" type="image/jpeg">
+
+                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 481px)  and (max-height: 880px)" srcset="./imagens/home/home-jpg/home-256.jpg" type="image/jpeg">
+
+                        <source media="(min-width: 769px) and (max-width: 1250px) and (min-height: 481px) and (max-height: 1024px)" srcset="./imagens/home/home-jpg/home-384.jpg" type="image/jpeg">
+
+                        <source media="(min-width: 769px) and (max-width: 1024px) and (min-height: 1025px)" srcset="./imagens/home/home-jpg/home-256.jpg" type="image/jpeg">
+
+                        <img src="./imagens/home/home-jpg/home-512.jpg" alt="Sala moderna e elegante com paredes claras, piso de madeira e um sofá amarelo em destaque.">
                     </picture>
                     <div class="img-hero-accent"></div>
                 </div>
@@ -105,22 +139,13 @@
         </div>
     </section>
 
-    <main class="container-main flexbox flex-column">
+    <main class="container-main flexbox  flex-column">
 
         <article id="about" class="about-container  sections-main flexbox flex-column">
 
             <h2>Sobre nós</h2>
 
             <div class="container-img-about">
-                <!--<picture class="picture-about" id="about-picture">
-                    <source media="(max-width: 480px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/sobre/texrimisobre-150.jpg" type="image/jpeg" id="about-source">
-
-                    <source media="(max-width: 768px)" srcset="./imagens/sobre/texrimisobre-200.jpg" type="image/jpeg">
-
-                    <source media="(max-width: 1024px)" srcset="./imagens/sobre/texrimisobre-300.jpg" type="image/jpeg">
-
-                    <img src="./imagens/sobre/texrimisobre-400.jpg" alt="Logo da Tex Rimi">
-                </picture>-->
             </div>
 
             <div class="paragraph-about-container">
@@ -190,31 +215,61 @@
                 <div class="portfolio-box-items box-items-1 flexbox">
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport01-150.jpg" type="image/jpeg">
+                            <!--WEBP-->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport01-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport01-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-01.jpg" alt="Moldura branca elegante, acabamento refinado e atemporal." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport01-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-01.webp" type="image/webp">
+
+                            <!-- JPG -->
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport01-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport01-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-01.jpg" alt="Moldura branca elegante, acabamento refinado e atemporal." loading="lazy">
                         </picture>
                     </div>
     
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport02-150.jpg" type="image/jpeg">
+                            <!-- WEBP -->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport02-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport02-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-02.jpg" alt="Parede com moldura branca e estantes para TV ou decoração, design versátil." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport02-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-02.webp" type="image/webp">
+
+                            <!-- JPG -->
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport02-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport02-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-02.jpg" alt="Parede com moldura branca e estantes para TV ou decoração, design versátil." loading="lazy">
                         </picture>
                     </div>
     
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport03-150.jpg" type="image/jpeg">
+                            <!-- WEBP -->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport03-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport03-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-03.jpg" alt="Moldura branca ao redor da TV, adicionando sofisticação e contraste." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport03-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-03.webp" type="image/webp">
+
+                            <!-- JPG -->
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport03-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport03-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-03.jpg" alt="Moldura branca ao redor da TV, adicionando sofisticação e contraste." loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -222,31 +277,61 @@
                 <div class="portfolio-box-items box-items-2 flexbox">
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport04-150.jpg" type="image/jpeg">
+                            <!-- WEBP -->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport04-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport04-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-04.jpg" alt="Área externa com parede verde e azulejos decorativos, destacando estilo e cuidado." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport04-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-04.webp" type="image/webp">
+
+                            <!-- JPG -->
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport04-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport04-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-04.jpg" alt="Área externa com parede verde e azulejos decorativos, destacando estilo e cuidado." loading="lazy">
                         </picture>
                     </div>
     
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport05-150.jpg" type="image/jpeg">
+                            <!-- WEBP -->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport05-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport05-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-05.jpg" alt="Sala com parede verde e porta, criando um ambiente acolhedor e moderno." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport05-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-05.webp" type="image/webp">
+
+                            <!-- JPG -->
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport05-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport05-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-05.jpg" alt="Sala com parede verde e porta, criando um ambiente acolhedor e moderno." loading="lazy">
                         </picture>
                     </div>
     
                     <div class="portfolio-items">
                         <picture>
-                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-150/imgport06-150.jpg" type="image/jpeg">
+                            <!-- WEBP -->
 
-                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-225/imgport06-225.jpg" type="image/jpeg">
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-150/imgport06-150.webp" type="image/webp">
 
-                            <img src="./imagens/portfolio/portfolio-300/imgportfolio-06.jpg" alt="Sala com parede verde e porta de correr de vidro, integrando interior e exterior." loading="lazy">
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-webp/portfolio-225/imgport06-225.webp" type="image/webp">
+
+                            <source srcset="./imagens/portfolio/portfolio-webp/portfolio-300/imgportfolio-06.webp" type="image/webp">
+
+                            <!-- JPG --> 
+
+                            <source media="(max-width: 480px), (max-height: 320px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-150/imgport06-150.jpg" type="image/jpeg">
+
+                            <source media="(max-width: 768px), (max-height: 480px) and (orientation: landscape)" srcset="./imagens/portfolio/portfolio-jpg/portfolio-225/imgport06-225.jpg" type="image/jpeg">
+
+                            <img src="./imagens/portfolio/portfolio-jpg/portfolio-300/imgportfolio-06.jpg" alt="Sala com parede verde e porta de correr de vidro, integrando interior e exterior." loading="lazy">
                         </picture>
                     </div>
                 </div>        
@@ -315,9 +400,11 @@
     </footer>
 
 
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/links.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script type="module" src="./js/links.min.js"></script>
+    <script nomodule src="./js/babel/linksb.js"></script>
+    <script type="module" src="./js/portfolio.min.js"></script>
+    <script nomodule src="./js/babel/portfoliob.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
