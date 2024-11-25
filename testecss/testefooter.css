@@ -1,0 +1,28 @@
+footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: var(--color-black);
+    padding: 20px 0;
+}
+hr {
+    width: 90vw;
+    color: var(--color-white);
+    margin: 20px 0px;
+}
+
+.paragraph-footer {
+    font-size: 0.9rem;
+    color: var(--color-white);
+}
+
+@media (max-width: 320px) {
+    .paragraph-footer {
+        font-size: 0.8rem;
+    }
+}

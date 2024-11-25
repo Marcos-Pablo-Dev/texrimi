@@ -1,5 +1,5 @@
 var portfolioItem = document.querySelectorAll('.portfolio-items');
-portfolioItem.forEach(function (item) {
+portfolioItem.foreach(function (item) {
   item.addEventListener('mousemove', function () {
     item.classList.add('port-active');
   });
