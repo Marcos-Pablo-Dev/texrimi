@@ -1,4 +1,14 @@
+const noJs = document.querySelectorAll('.no-js')
 const portfolioItem = document.querySelectorAll('.portfolio-items');
+
+window.addEventListener('load', classRemove());
+window.addEventListener('resize', classRemove());
+
+function classRemove() {
+    noJs.forEach(item => {
+        item.classList.remove('no-js')
+    })
+}
 
 portfolioItem.forEach( item => {
     item.addEventListener('mousemove', () => {

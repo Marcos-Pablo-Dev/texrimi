@@ -48,7 +48,7 @@
 }
 
 .paragraph1-about {
-    margin-bottom: 20px;
+    margin: 32px 0px 20px 0px;
 }
 
 strong.texrimi {
@@ -69,6 +69,7 @@ strong.texrimi {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    flex-wrap: wrap;
     /*gap: 8%;*/
 }
 
@@ -76,7 +77,7 @@ strong.texrimi {
     width: 320px;
     height: 428px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 48px 36px 0px 36px;
     -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.20);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.20);
 }
@@ -124,44 +125,49 @@ strong.texrimi {
         /*-- Portfólio --*/
 
 .portfolio-container {
-    width: 100svw;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: #403F3F;
     background: var(--color-gray);
-    gap: 48px;
 }
 
 .portfolio-header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 12px;
+            margin-bottom: 48px;
 }
 
 .portfolio-container h2 {
+    color: #A68217;
     color: var(--color-yellow);
+    margin-bottom: 12px;
 }
 
 .paragraph-portfolio {
+    color: #fff;
     color: var(--color-white);
+    text-align: center;
 }
 
 .container-portfolio-items {
-    gap: 20px;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
 }
 
-.portfolio-box-items {
-    gap: 20px;
+.box-items-1 {
+   margin-bottom: 20px;
 }
 
 .portfolio-items {
     overflow: hidden;
     width: 150px;
     height: 400px;
+    margin: 0px 10px;
     -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     -webkit-transition: width 0.3s ease-in-out;
@@ -173,6 +179,18 @@ strong.texrimi {
     width: 300px;
 }
 
+.no-js .paragraph-portfolio {
+    display: none;
+}
+
+.no-js .portfolio-items {
+    width: 100%;
+}
+
+.no-js .container-portfolio-items {
+    flex-wrap: wrap;
+}
+
             /*-- Contact --*/
 
 .contact-header {
@@ -181,12 +199,14 @@ strong.texrimi {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    gap: 8px;
     margin-bottom: 48px;
 }
 
+.contact-header h2 {
+    margin-bottom: 12px;
+}
+
 .container-address {
-    gap: 48px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -204,6 +224,7 @@ strong.texrimi {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 10px 0px;
+    margin-bottom:  48px;
     border-radius: 10px;
 }
 
@@ -220,6 +241,7 @@ strong.texrimi {
 }
 
 .link-contact.link-contact-active p {
+    color: #A68217;
     color: var(--color-yellow);
 }
 
@@ -228,8 +250,6 @@ strong.texrimi {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 10px;
-
 }
 
 .social-media .content-separation hr{
@@ -255,6 +275,7 @@ strong.texrimi {
 .container-street {
     width: 300px;
     min-width: 300px;
+    background: #0d0d0d;
     background: var(--color-black);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -286,10 +307,10 @@ strong.texrimi {
 
     /*-- Supports --*/
 
-@supports (height: 100svh){
+@supports (background-image: url('../imagens/sobre/swebp/sobre400.webp')){
 
     .container-img-about {
-        background-image: url('../imagens/sobre/swebp/sobre400.webp')
+        background-image: url('../imagens/sobre/swebp/sobre400.webp');
     }
 
     .img-card-1 {
@@ -313,7 +334,7 @@ strong.texrimi {
 
 @media (min-width: 1920px) {
    .container-main.flex-column {
-        width: 100svw;
+        width: 100%;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -353,25 +374,30 @@ strong.texrimi {
 
         /*-- Services --*/
 
-    .services-cards {
+    /*.services-cards {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        gap: 0px;
+        margin: 0px;
+    }*/
+
+    .card {
+        margin: 48px 28px 0px 28px;
     }
 
         /*-- Portfolio --*/
 
     .portfolio-items {
         width: 100px;
-        height: 400;
-        -webkit-transition: width 0.3s ease-in-out;
-        -o-transition: width 0.3s ease-in-out;
-        transition: width 0.3s ease-in-out;
+        height: 400px;
     }
     
     .port-active {
         width: 300px;
+    }
+
+    .no-js .portfolio-items {
+        width: 100%;
     }
 }
 
@@ -383,12 +409,15 @@ strong.texrimi {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 48px;
+        /*gap: 48px;*/
     }
 
     .container-img-about {
         position: relative;
-        content: url('../imagens/sobre/texrimisobre-300.jpg');
+        width: 300px;
+        height: 299px;
+        margin-top: 32px;
+        background-image: url('../imagens/sobre/sjpg/sobre300.jpg');
         right: 0;
         top: 0;
         -webkit-transform: translateY(0%);
@@ -406,7 +435,11 @@ strong.texrimi {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 48px;
+        /*gap: 48px;*/
+    }
+
+    .card {
+        margin: 48px 0px 0px 0px;
     }
 
     /*-- Portfolio --*/
@@ -426,10 +459,36 @@ strong.texrimi {
 
     .portfolio-items {
         width: 150px;
+        margin: 10px;
     }
     
     .port-active {
         width: 300px;
+    }
+
+    .no-js .portfolio-items {
+        width: 300px;
+    }
+
+    .box-items-1 {
+        margin: 0px;
+    }
+
+    .no-js .container-portfolio-items {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .no-js .portfolio-box-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     /*-- Contact --*/
@@ -445,13 +504,48 @@ strong.texrimi {
                 flex: 1;
     }
 
+    @supports (background-image: url('../imagens/sobre/swebp/sobre300.webp')){
+
+        .container-img-about {
+            background-image: url('../imagens/sobre/swebp/sobre300.webp');
+        }   
+    }
+
 }
 
 @media (max-width: 768px) {
     /*-- About img --*/
 
     .container-img-about {
-        content: url('../imagens/sobre/texrimisobre-200.jpg');
+        width: 200px;
+        height: 199px;
+        background-image: url('../imagens/sobre/sjpg/sobre200.jpg');
+    }
+
+    @supports (background-image: url('../imagens/sobre/swebp/sobre200.webp')){
+
+        .container-img-about {
+            background-image: url('../imagens/sobre/swebp/sobre200.webp');
+        }   
+    }
+
+    /*-- Portfolio --*/
+
+    .no-js .container-portfolio-items {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .no-js .portfolio-box-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -484,6 +578,10 @@ strong.texrimi {
         width: 225px;
     }
 
+    .no-js .portfolio-items {
+        width: 225px;
+    }
+
     /*-- Contact --*/
 
         /*-- map --*/
@@ -512,7 +610,16 @@ strong.texrimi {
 
 @media (max-width: 480px), (max-height: 480px) and (orientation: landscape) {
     .container-img-about {
-        content: url('../imagens/sobre/texrimisobre-150.jpg');
+        width: 150px;
+        height: 149px;
+        background-image: url('../imagens/sobre/sjpg/sobre150.jpg');
+    }
+
+    @supports (background-image: url('../imagens/sobre/swebp/sobre150.webp')){
+
+        .container-img-about {
+            background-image: url('../imagens/sobre/swebp/sobre150.webp');
+        }   
     }
 }
 
@@ -521,7 +628,7 @@ strong.texrimi {
         /*-- About --*/
 
     .about-container {
-        padding: 110px 5svw 0px 5svw;
+        padding: 110px 5% 0px 5%;
     }
 
         /*-- Portfolio --*/
@@ -536,6 +643,10 @@ strong.texrimi {
                 justify-content: center;
     }
 
+    .box-items-1 {
+        margin-bottom: 0px;
+     }
+
     .portfolio-items, .portfolio-items picture {
         height: 200px;
     }
@@ -549,6 +660,7 @@ strong.texrimi {
 
     .portfolio-items, .portfolio-items.port-active {
         width: 150px;
+        margin-bottom: 20px;
     }
 
 
@@ -597,16 +709,10 @@ strong.texrimi {
     }
 
     .card {
-    width: 90svw;
+    width: 95%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    }
-
-    /*-- Portfolio --*/
-
-    .container-portfolio-items {
-        gap: 10px;
     }
 
 }
@@ -636,7 +742,7 @@ strong.texrimi {
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 340px) {
     /*-- Portfolio --*/
 
     .container-portfolio-items {
@@ -648,7 +754,9 @@ strong.texrimi {
             -ms-flex-pack: center;
                 justify-content: center;
     }
+}
 
+@media (max-width: 320px){
     /*-- Contact --*/
 
     .container-main .container-address .social-media {

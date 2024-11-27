@@ -41,7 +41,7 @@ header {
     border-radius: 10px;
 }
 
-.link-nav:hover /*.link-nav-active*/ {
+.link-nav.link-nav-active {
     color: #fff;
     color: var(--color-white);
     background: #403F3F;
@@ -52,7 +52,7 @@ header {
     display: none;
 }
 
-        /*-- End-Header --*/
+        /*-- End-Header --*/  
 
                 /*-- Hero --*/
     
@@ -101,7 +101,7 @@ header {
             box-shadow: var(--shadow-1);
 }
 
-.btn-home:hover/*.btn-active, .btn-home:active*/{
+.btn-home.btn-active, .btn-home:active{
     cursor: pointer;
     background: #7b6219;
     background: var(--color-yellow-hover);
