@@ -206,6 +206,11 @@ strong.texrimi {
     margin-bottom: 12px;
 }
 
+.paragraph-contact {
+    width: 100%;
+    text-align: center;
+}
+
 .container-address {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -238,9 +243,11 @@ strong.texrimi {
 
 .paragraph-link-contact {
     margin-top: 16px;
+    color: #403F3F;
+    color: var(--color-gray);
 }
 
-.link-contact.link-contact-active p {
+.link-contact.link-contact-active p, .no-js .link-contact:hover p  {
     color: #A68217;
     color: var(--color-yellow);
 }
@@ -272,6 +279,10 @@ strong.texrimi {
     height: 300px;
 }
 
+.no-js .container-iframe {
+    display: none;
+}
+
 .container-street {
     width: 300px;
     min-width: 300px;
@@ -280,7 +291,6 @@ strong.texrimi {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 48px;
     padding: 0px 20px;
 }
 
@@ -288,16 +298,24 @@ strong.texrimi {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    color: #A68217;
     color: var(--color-yellow);
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid;
+    margin-bottom: 48px;
+}
+
+.no-js .container-street h3 {
+    text-align: center;
 }
 
 .street-link {
+    color: #fff;
     color: var(--color-white);
     font-style: italic;
 }
 
-.street-link.link-contact-active {
+.street-link.link-contact-active, .no-js .street-link:hover {
+    color: #A68217;
     color: var(--color-yellow);
 }
             
@@ -515,6 +533,14 @@ strong.texrimi {
 
 @media (max-width: 768px) {
     /*-- About img --*/
+    .about-container {
+        padding: 110px 5% 0px 5%;
+    }
+
+    .paragraph-about-container {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .container-img-about {
         width: 200px;
@@ -627,9 +653,7 @@ strong.texrimi {
 
         /*-- About --*/
 
-    .about-container {
-        padding: 110px 5% 0px 5%;
-    }
+
 
         /*-- Portfolio --*/
 
@@ -666,20 +690,16 @@ strong.texrimi {
 
         /*-- Contact --*/
 
-    /*.contact-container {
-        padding-bottom: 0px;
-    }*/
-
     .contact-header {
         width: 100%;
     }
 
     .container-address {
-       width: 100svw;
+       width: 100%;
     }
 
     .container-main .container-address .social-media {
-        width: 90svw;
+        width: 90%;
         -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
         -webkit-box-orient: horizontal;
