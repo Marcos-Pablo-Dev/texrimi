@@ -392,13 +392,6 @@ strong.texrimi {
 
         /*-- Services --*/
 
-    /*.services-cards {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin: 0px;
-    }*/
-
     .card {
         margin: 48px 28px 0px 28px;
     }
@@ -427,7 +420,6 @@ strong.texrimi {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        /*gap: 48px;*/
     }
 
     .container-img-about {
@@ -453,7 +445,6 @@ strong.texrimi {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        /*gap: 48px;*/
     }
 
     .card {
@@ -512,7 +503,7 @@ strong.texrimi {
     /*-- Contact --*/
 
     .container-map {
-        width: 90svw;
+        width: 90%;
     }
 
     .container-iframe, .container-iframe iframe {
@@ -521,6 +512,8 @@ strong.texrimi {
             -ms-flex: 1;
                 flex: 1;
     }
+
+    /*-- Supports --*/
 
     @supports (background-image: url('../imagens/sobre/swebp/sobre300.webp')){
 
@@ -547,6 +540,8 @@ strong.texrimi {
         height: 199px;
         background-image: url('../imagens/sobre/sjpg/sobre200.jpg');
     }
+
+    /*-- Supports --*/
 
     @supports (background-image: url('../imagens/sobre/swebp/sobre200.webp')){
 
@@ -621,14 +616,17 @@ strong.texrimi {
     }
 
     .container-map, .container-iframe iframe {
-        width: 90svw;
+        width: 90%;
     }
 
     .container-street {
         width: 100%;
         min-width: 0px;
-        gap: 40px;
         padding: 52px 20px;
+    }
+    
+    .container-street h3 {
+        margin-bottom: 40px;
     }
 
 
@@ -641,6 +639,8 @@ strong.texrimi {
         background-image: url('../imagens/sobre/sjpg/sobre150.jpg');
     }
 
+    /*-- Supports --*/
+
     @supports (background-image: url('../imagens/sobre/swebp/sobre150.webp')){
 
         .container-img-about {
@@ -650,11 +650,6 @@ strong.texrimi {
 }
 
 @media (max-width: 480px) {
-
-        /*-- About --*/
-
-
-
         /*-- Portfolio --*/
 
     .container-portfolio-items {
@@ -725,14 +720,14 @@ strong.texrimi {
 @media (max-width: 360px) {
     /*-- Services --*/
     .img-card {
-    display: none;
+        display: none;
     }
 
     .card {
-    width: 95%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+        width: 95%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
     }
 
 }
@@ -839,7 +834,7 @@ strong.texrimi {
             /*-- map --*/
 
     .container-map {
-        width: 100svw;
+        width: 100%;
     }
 
     .container-iframe {
