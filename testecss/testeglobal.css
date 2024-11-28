@@ -16,20 +16,21 @@
 
     /* sombras */
     --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    --shadow-2: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    --shadow-2: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-html {
-    
+html {   
     scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
     width: 2px;
+    background: #8B939C;
     background: var(--color-background);
 }
 
 html::-webkit-scrollbar-thumb {
+    background-color: #fff;
     background: var(--color-white);
 }
 
@@ -70,7 +71,7 @@ a {
 
 h1{
     font-weight: 700;
-    max-width: 500px;
+    max-width: 600px;
     font-size: 3rem;
     color: #403F3F;
     color: var(--color-gray);
@@ -89,11 +90,13 @@ h2 {
 }
 
 h3 {
+    color: #403F3F;
     color: var(--color-gray);
     font-size: 1.5rem;
 }
 
 p {
+    color: #403F3F;
     color: var(--color-gray);
     letter-spacing: 1px;
 }
@@ -123,7 +126,6 @@ p {
         font-size: 0.9rem;
     }
 }
-
 
 @media (max-width: 768px), (max-height: 620px){
     h1 {
